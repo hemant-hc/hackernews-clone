@@ -7,7 +7,7 @@ export const Title = () => {
   return (
     <div className="heading">
       <img src={iconImage} alt="img" className="icon" />
-      <div className="heading-text">Hackerr News</div>
+      <div className="heading-text">Hacker News</div>
       <br></br>
       <br></br>
     </div>
