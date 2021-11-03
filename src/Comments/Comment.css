@@ -1,0 +1,32 @@
+.comments-container-wrapper {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.comment-sub-text {
+  font-size: 8pt;
+  color: #828282;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.nested-comments {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.nested-comments-hidden {
+  display: none;
+}
+
+.nested-comment-link:hover {
+  text-decoration: underline;
+}
+
+.nested-comment-link:link {
+  color: #828282;
+}
+
+.link:hover {
+  cursor: pointer;
+}

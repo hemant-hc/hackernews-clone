@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { Title, App } from "./App";
+import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Title />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
@@ -16,3 +15,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// const [comments, setComments] = useState({});
+//   useEffect(() => {
+//     getComments(commentId).then(({ data }) => setComments(data));
+//   }, [commentId]);

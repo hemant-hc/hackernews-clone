@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from "react";
-import { getStoryID } from "./hackernewsapi";
-import { Story } from "./story";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import CommentsPage from "./Comments/CommentsPage";
+import StoriesContainer from "./Story/StoriesContainer";
+import Page from "./CommonComponents/Page/Page";
+
 import "./App.css";
-import iconImage from "./y18.gif";
-export const Title = () => {
+
+export const App = () => {
   return (
-    <div className="heading">
-      <img src={iconImage} alt="img" className="icon" />
-      <div className="heading-text">Hacker News</div>
-      <br></br>
-      <br></br>
+    <div>
+      <Router>
+        <Page>
+          <Switch>
+            <Route path="/comments/:storyId">
+              <CommentsPage />
+            </Route>
+            <Route path="/">
+              <StoriesContainer />
+            </Route>
+          </Switch>
+        </Page>
+      </Router>
     </div>
   );
-};
-export const App = () => {
-  const [storyIDs, setStoryIDs] = useState([]);
-  useEffect(() => {
-    getStoryID().then((data) => setStoryIDs(data));
-  }, []);
-  return storyIDs.map((storyID) => <Story storyID={storyID} />);
 };

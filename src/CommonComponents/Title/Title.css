@@ -1,0 +1,39 @@
+.title-content {
+  width: 85%;
+}
+
+.heading {
+  line-height: 12pt;
+  display: flex;
+  font-size: 14px;
+  color: black;
+  background-color: #ff6600;
+  margin-top: 8px;
+  font-weight: bold;
+  height: 25px;
+  padding: 2.5px;
+}
+.heading:link {
+  color: black;
+}
+.heading:visited {
+  color: black;
+}
+
+.icon {
+  margin-left: 1px;
+  align-content: center;
+  border: solid white 1px;
+}
+.heading-text {
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.news-title {
+  margin-top: 8px;
+  height: 16px;
+}
+.news-title span:hover {
+  color: black;
+}
